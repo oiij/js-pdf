@@ -1,18 +1,18 @@
 {
-  "name": "ts-starter",
+  "name": "@oiij/js-pdf",
   "type": "module",
   "version": "0.0.1",
-  "description": "A starter template for TypeScript projects",
+  "description": "A simple PDF library for JavaScript",
   "author": "oiij",
   "license": "MIT",
-  "homepage": "https://github.com/oiij/ts-starter",
+  "homepage": "https://github.com/oiij/js-pdf",
   "repository": {
     "type": "git",
-    "url": "git@github.com:oiij/ts-starter.git"
+    "url": "git@github.com:oiij/js-pdf.git"
   },
-  "bugs": "https://github.com/oiij/ts-starter/issues",
+  "bugs": "https://github.com/oiij/js-pdf/issues",
   "keywords": [
-    "ts-starter"
+    "js-pdf"
   ],
   "sideEffects": false,
   "exports": {
@@ -47,13 +47,21 @@
     "cz": "czg",
     "commit": "git pull && git add -A && pnpm cz && git push",
     "link": "pnpm link --global",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "npx simple-git-hooks"
+    "preinstall": "npx only-allow pnpm"
+  },
+  "peerDependencies": {
+    "file-saver": "^2.0.5",
+    "jspdf": "^3.0.1",
+    "jszip": "^3.10.1",
+    "nanoid": "^5.1.5",
+    "pdfjs-dist": "^5.1.91"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
     "@oiij/tsconfig": "^0.0.1",
+    "@types/file-saver": "^2.0.7",
     "@types/node": "^22.14.1",
+    "@types/wicg-file-system-access": "^2023.10.6",
     "@vitest/ui": "^3.1.2",
     "bumpp": "^10.1.0",
     "commitlint": "^19.8.0",
@@ -62,7 +70,12 @@
     "eslint": "^9.25.1",
     "eslint-plugin-format": "^1.0.1",
     "esno": "^4.8.0",
+    "file-saver": "^2.0.5",
+    "jspdf": "^3.0.1",
+    "jszip": "^3.10.1",
     "lint-staged": "^15.5.1",
+    "nanoid": "^5.1.5",
+    "pdfjs-dist": "^5.1.91",
     "simple-git-hooks": "^2.12.1",
     "taze": "^19.0.4",
     "tsdown": "^0.9.3",

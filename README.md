@@ -1,4 +1,4 @@
-# library-starter
+# JS-PDF
 
 Features:
 
@@ -7,18 +7,17 @@ Features:
 
 # Usage
 
-### 本地包测试
-
-当前目录下执行：
+### 安装
 
 ```bash
-pnpm link --global --dir=./
+pnpm add @oiij/js-pdf
 ```
 
-目标目录：
+### 使用
 
-```bash
-pnpm link --global <package name>
+```ts
+import { openPdf } from '@oiij/js-pdf'
+const { pdf } = await openPdf()
 ```
 
 ## License
